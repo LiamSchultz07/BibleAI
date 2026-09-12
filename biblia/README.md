@@ -5,14 +5,31 @@ passage, compare how translations render it, see where interpretive traditions
 genuinely disagree, keep your own notes and highlights, and have any of it read
 aloud.
 
+**macOS / Linux**
+
 ```
 make all      # venv, dependencies, texts, corpus build — about 3 minutes
 make serve    # http://localhost:8000
 ```
 
-Needs Python 3.10+, Node 18+, and git. Everything installs into a project-local
-`.venv`, so nothing touches your system Python. No API key is required to run
-it — see [Configuration](#configuration).
+**Windows** (PowerShell — `make` is not available there)
+
+```powershell
+.\setup.ps1   # same three minutes
+.\run.ps1     # http://localhost:8000
+```
+
+Needs Python 3.10+, Node 18+, and git:
+
+```powershell
+winget install Python.Python.3.12
+winget install OpenJS.NodeJS.LTS
+winget install Git.Git
+```
+
+Everything installs into a project-local `.venv`, so nothing touches your
+system Python. No API key is required to run it — see
+[Configuration](#configuration).
 
 ---
 
